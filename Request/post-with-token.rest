@@ -34,4 +34,13 @@ Authorization: Bearer {{ login.response.body.token }}
   }
 }
 
+###
+POST http://127.0.0.1:8000/fabrica/
+Content-Type: application/json
+Authorization: Bearer {{ login.response.body.token }}
+
+  {
+    "id": "2",
+    "nombre": "chevrolet"
+  }
 

@@ -4,16 +4,22 @@ GET http://localhost:8000/auto
 GET http://localhost:8000/auto/3
 
 ###
-DELETE http://localhost:8000/auto/3
+DELETE http://localhost:8000/auto/4
 
 ###
 GET http://localhost:8000/auto/2
 
+
+//no funciona :p
 ###
 GET http://localhost:8000/auto?fabricadeautos_id=1
-###
-GET http://localhost:8000/fabricadeautos
+
 ###
 GET http://localhost:8000/auto?nombre=cards
 ###
 GET http://localhost:8000/auto?nombre=wow
+###
+GET http://localhost:8000/fabrica
+
+###
+GET http://localhost:8000/fabrica/2

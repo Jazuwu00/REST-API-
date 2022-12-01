@@ -4,6 +4,7 @@ const middleware = require("./utils/middleware");
 const keepaliveController = require("./controller/keepalive");
 const entryController = require("./controller/entry");
 const loginController = require("./controller/login");
+const fabricaController = require("./controller/fabrica");
 
 const app = express();
 
@@ -18,7 +19,8 @@ app.use("/login", loginController);
 
 app.use("/keepalive", keepaliveController);
 app.use("/auto", entryController); 
-app.use("/fabricadeautos", entryController); 
+app.use("/fabrica", fabricaController); 
+
 
 app.use(middleware.unknownEndpoint);
 module.exports = app;

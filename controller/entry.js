@@ -3,6 +3,7 @@ const middleware = require('../utils/middleware');
 const router = require("express").Router();
 let dao  = require("../dataccess/entry");
 
+
 // Obtener todo 
 router.get("/", async (req, res) => { 
   res.status(200).json(await dao.getAll(req.query));
