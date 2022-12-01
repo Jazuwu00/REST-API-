@@ -1,0 +1,35 @@
+# @name login
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+  "username":"admin",
+  "password":"123456"
+}
+
+###
+POST http://127.0.0.1:8000/objeto/
+Content-Type: application/json
+Authorization: Bearer {{ login.response.body.token }}
+
+{
+  "nombre" : "powesssr",
+  "anio" : "1999-12-11",
+  "fabricadeauto": { 
+    "id": "3",
+    "nombre": "ford"
+  }
+}
+
+###
+PUT http://127.0.0.1:8000/objeto/2
+Content-Type: application/json
+Authorization: Bearer {{ login.response.body.token }}
+
+{
+  "nombre" : "cards",
+  "anio" : "2002-08-11",
+  "fabricadeauto": {
+    "id": 1
+  }
+}

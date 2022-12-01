@@ -1,0 +1,19 @@
+GET http://localhost:8000/objeto
+
+###
+GET http://localhost:8000/objeto/3
+
+###
+DELETE http://localhost:8000/objeto/3
+
+###
+GET http://localhost:8000/objeto/2
+
+###
+GET http://localhost:8000/objeto?fabricadeautos_id=2
+###
+GET http://localhost:8000/objeto
+###
+GET http://localhost:8000/objeto?nombre=cards
+###
+GET http://localhost:8000/objeto?nombre=wow
