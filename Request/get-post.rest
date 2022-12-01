@@ -1,19 +1,19 @@
-GET http://localhost:8000/objeto
+GET http://localhost:8000/auto
 
 ###
-GET http://localhost:8000/objeto/3
+GET http://localhost:8000/auto/3
 
 ###
-DELETE http://localhost:8000/objeto/3
+DELETE http://localhost:8000/auto/3
 
 ###
-GET http://localhost:8000/objeto/2
+GET http://localhost:8000/auto/2
 
 ###
-GET http://localhost:8000/objeto?fabricadeautos_id=2
+GET http://localhost:8000/auto?fabricadeautos_id=1
 ###
-GET http://localhost:8000/objeto
+GET http://localhost:8000/fabricadeautos
 ###
-GET http://localhost:8000/objeto?nombre=cards
+GET http://localhost:8000/auto?nombre=cards
 ###
-GET http://localhost:8000/objeto?nombre=wow
+GET http://localhost:8000/auto?nombre=wow

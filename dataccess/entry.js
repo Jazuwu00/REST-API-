@@ -37,7 +37,7 @@ const getOne = async (id) => {
   ]
 });}
 
-
+//autos
 const save = async (body) => {
   const data = { ...body}
   const auto = await Auto.create(data);

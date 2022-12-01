@@ -17,7 +17,8 @@ app.use(middleware.processToken);
 app.use("/login", loginController); 
 
 app.use("/keepalive", keepaliveController);
-app.use("/objeto", entryController); 
+app.use("/auto", entryController); 
+app.use("/fabricadeautos", entryController); 
 
 app.use(middleware.unknownEndpoint);
 module.exports = app;

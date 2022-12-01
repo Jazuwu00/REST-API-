@@ -28,6 +28,11 @@ router.post("/", middleware.validarUserLogin, async (req, res) => {
   res.status(200).json(data);
 });
 
+
+
+
+
+
 router.delete("/:id", async (req, res) => {
   const id = req.params.id;
 

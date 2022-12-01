@@ -8,21 +8,21 @@ Content-Type: application/json
 }
 
 ###
-POST http://127.0.0.1:8000/objeto/
+POST http://127.0.0.1:8000/auto/
 Content-Type: application/json
 Authorization: Bearer {{ login.response.body.token }}
 
 {
-  "nombre" : "powesssr",
-  "anio" : "1999-12-11",
+  "nombre" : "autitochikitomuychikito",
+  "anio" : "1999-12-31",
   "fabricadeauto": { 
     "id": "3",
-    "nombre": "ford"
+    "nombre": "si"
   }
 }
 
 ###
-PUT http://127.0.0.1:8000/objeto/2
+PUT http://127.0.0.1:8000/auto/2
 Content-Type: application/json
 Authorization: Bearer {{ login.response.body.token }}
 
@@ -33,3 +33,5 @@ Authorization: Bearer {{ login.response.body.token }}
     "id": 1
   }
 }
+
+

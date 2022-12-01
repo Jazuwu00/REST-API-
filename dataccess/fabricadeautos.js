@@ -7,7 +7,10 @@ const getAll = async (filter) => {
   return datos
 };
 
-const getOne = async (id) => { return await Fabricadeautos.findByPk(id);}
+const getOne = async (id) => {
+  
+   return await Fabricadeautos.findByPk(id);
+  }
 
 
 const save = async (body) => {
