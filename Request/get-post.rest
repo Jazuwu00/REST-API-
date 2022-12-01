@@ -10,9 +10,9 @@ DELETE http://localhost:8000/auto/4
 GET http://localhost:8000/auto/2
 
 
-//no funciona :p
+//no funciona
 ###
-GET http://localhost:8000/auto?fabricadeautos_id=1
+GET http://localhost:8000/auto?fabricasdeautos.id=2
 
 ###
 GET http://localhost:8000/auto?nombre=cards

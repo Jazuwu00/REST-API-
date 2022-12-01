@@ -16,8 +16,8 @@ Authorization: Bearer {{ login.response.body.token }}
   "nombre" : "autitochikitomuychikito",
   "anio" : "1999-12-31",
   "fabricadeauto": { 
-    "id": "3",
-    "nombre": "si"
+    "id": "2",
+    "nombre": "chevrolett"
   }
 }
 
@@ -43,4 +43,14 @@ Authorization: Bearer {{ login.response.body.token }}
     "id": "2",
     "nombre": "chevrolet"
   }
+###
+PUT http://127.0.0.1:8000/fabrica/2
+Content-Type: application/json
+Authorization: Bearer {{ login.response.body.token }}
+
+  {
+    "id": "2",
+    "nombre": "chevrolett"
+  }
+
 
