@@ -10,11 +10,11 @@ const getAll = async (filter) => {
     ]
   }
 
-  if (filter.fabricadeautos_id)
+  if (filter.fabricasdeauto_id)
     options = {
       ...options, where: {
         ...options.where,
-        fabricadeautosId: filter.fabricadeautos_id
+        fabricasdeauto_id: filter.fabricasdeauto_id
       }
     }
   
@@ -37,7 +37,7 @@ const getOne = async (id) => {
   ]
 });}
 
-//autos
+
 const save = async (body) => {
   const data = { ...body}
   const auto = await Auto.create(data);

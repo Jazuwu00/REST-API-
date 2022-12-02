@@ -12,7 +12,7 @@ GET http://localhost:8000/auto/2
 
 //no funciona
 ###
-GET http://localhost:8000/auto?fabricasdeautos.id=2
+GET http://localhost:8000/auto?fabricasdeauto_id=2
 
 ###
 GET http://localhost:8000/auto?nombre=cards

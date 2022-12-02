@@ -21,6 +21,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+
 // POST con usuario logueado (sino se cierra el programa)
 router.post("/", middleware.validarUserLogin, async (req, res) => {
   
