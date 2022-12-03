@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize')
 
 const sequelize = new Sequelize(
-  'autos',          // nombre de la base de datos
-  'root',      // usuario
-  'password',  // passowrd
+  process.env.DATABASE,          // nombre de la base de datos
+  process.env.USER,      // usuario
+  process.env.PASSWORD,  // passowrd
   {               //datos de conexión
     host: 'localhost',
     port: '3306',

@@ -7,17 +7,12 @@ GET http://localhost:8000/auto/3
 DELETE http://localhost:8000/auto/4
 
 ###
-GET http://localhost:8000/auto/2
-
-
-//no funciona
-###
 GET http://localhost:8000/auto?fabricasdeauto_id=2
 
 ###
-GET http://localhost:8000/auto?nombre=cards
+GET http://localhost:8000/auto?nombre=max
 ###
-GET http://localhost:8000/auto?nombre=wow
+GET http://localhost:8000/auto?nombre=mustang
 ###
 GET http://localhost:8000/fabrica
 

@@ -14,7 +14,7 @@ router.post('/', (req,res)=>{
     }
 
     const token = jwt.sign(tokenData,process.env.JWTSECRET,{ expiresIn: '1h' })
-    res.status(200).send({token, name: 'fulanito de tal'})
+    res.status(200).send({token, name: 'Roberto'})
   }else{
     //usuario incorrecto
     return res.status(401).json({error:'credenciales incorrecto'})

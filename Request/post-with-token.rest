@@ -7,19 +7,78 @@ Content-Type: application/json
   "password":"123456"
 }
 
+//Agregar autos
+
 ###
 POST http://127.0.0.1:8000/auto/
 Content-Type: application/json
 Authorization: Bearer {{ login.response.body.token }}
 
 {
-  "nombre" : "autitochikitomuychikito",
-  "anio" : "1999-12-31",
+  "nombre" : "max",
+  "anio" : "1900",
   "fabricadeauto": { 
-    "id": "2",
+    
     "nombre": "chevrolett"
   }
 }
+
+###
+POST http://127.0.0.1:8000/auto/
+Content-Type: application/json
+Authorization: Bearer {{ login.response.body.token }}
+
+{
+  "nombre" : "camry",
+  "anio" : "1900",
+  "fabricadeauto": { 
+    
+    "nombre": "toyota"
+  }
+}
+
+###
+POST http://127.0.0.1:8000/auto/
+Content-Type: application/json
+Authorization: Bearer {{ login.response.body.token }}
+
+{
+  "nombre" : "mustang",
+  "anio" : "1900",
+  "fabricadeauto": { 
+    
+    "nombre": "ford"
+  }
+}
+
+###
+POST http://127.0.0.1:8000/auto/
+Content-Type: application/json
+Authorization: Bearer {{ login.response.body.token }}
+
+{
+  "nombre" : "leaf",
+  "anio" : "1900",
+  "fabricadeauto": { 
+    
+    "nombre": "Nissan"
+  }
+}
+
+###
+POST http://127.0.0.1:8000/auto/
+Content-Type: application/json
+Authorization: Bearer {{ login.response.body.token }}
+
+{
+  "nombre" : "max",
+  "anio" : "1900",
+  "fabricadeauto": { 
+   
+    "nombre": "chevrolett"
+  }
+}
+
 
 ###
 PUT http://127.0.0.1:8000/auto/2
@@ -27,11 +86,8 @@ Content-Type: application/json
 Authorization: Bearer {{ login.response.body.token }}
 
 {
-  "nombre" : "cards",
-  "anio" : "2002-08-11",
-  "fabricadeauto": {
-    "id": 1
-  }
+  "nombre" : "carrio",
+  "anio" : "2002",
 }
 
 ###
@@ -44,13 +100,14 @@ Authorization: Bearer {{ login.response.body.token }}
     "nombre": "chevrolet"
   }
 ###
+
 PUT http://127.0.0.1:8000/fabrica/2
 Content-Type: application/json
 Authorization: Bearer {{ login.response.body.token }}
 
   {
-    "id": "2",
-    "nombre": "chevrolett"
+  
+    "nombre": "fiat"
   }
 
 

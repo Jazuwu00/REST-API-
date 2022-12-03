@@ -16,17 +16,6 @@ Auto.init({
   anio: {
     type: DataTypes.INTEGER,
     allowNull: false,
-    defaultValue: 1886,
-    validate:{
-      min: {
-        args: 1886,
-        msg: 'el año no puede ser menor a 1'  
-      },
-      max: {
-        args: new Date().getFullYear(),
-        msg: 'no puede escribir un año mayor a ${new Date().getFullYear()}'
-      }
-    }
   }
 }, {
   sequelize,
